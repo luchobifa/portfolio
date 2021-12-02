@@ -1,0 +1,29 @@
+.conteiner{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.cardConteiner{
+    width: 270px;
+    height: 500px;
+    border: 1px solid;
+}
+
+.img{
+    width: 270px;
+    height: 500px;
+}
+
+@media (max-width : 935px){
+    .conteiner{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+        flex-wrap: wrap;
+    }
+}

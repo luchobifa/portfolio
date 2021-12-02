@@ -1,0 +1,29 @@
+.conteiner{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon{
+    width: 60px;
+    height: 60px;
+    /* color: brown; */
+}
+
+.icon:hover{
+    width: 90px;
+    height: 90px;
+}
+
+.conteinerIcons{
+    width: 60%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    grid-template-rows: 120px 120px 120px;
+    grid-template-columns: 120px 120px 120px 120px;
+}
