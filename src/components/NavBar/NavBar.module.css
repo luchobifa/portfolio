@@ -19,6 +19,15 @@
     gap: 80px;
 }
 
+.linksConteinerAbierto{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
 .links{
     text-decoration: none;
     color: black;
@@ -54,7 +63,7 @@
     
     .linksConteiner{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
         background-color: white;

@@ -12,6 +12,8 @@ export default function NavBar(){
         setMenu(!menu);
     }
 
+    console.log(menu)
+
     return(
         <div className ={styles.conteiner}>
             <Link to = '/#' smooth = {true} offset = {-70} duration = {1000} activeClassName = "selected" style = {{textDecoration: "none", color: 'black'}}><h3>Portfolio.</h3></Link>

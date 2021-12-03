@@ -19,8 +19,9 @@
 }
 
 .conteinerIcons{
-    width: 60%;
+    width: 80%;
     display: grid;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     place-items: center;
