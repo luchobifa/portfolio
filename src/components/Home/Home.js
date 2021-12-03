@@ -13,7 +13,7 @@ export default function Home(){
             <NavBar/>
             <div className = {styles.content}>
                 <div>
-                    <h1>Hi there,</h1>
+                    <h1 className = {styles.firstTitle}>Hi there,</h1>
                     <h1>I'm Lucho Bifaretti</h1>
                     <h1> a Full Stack Web Developer</h1>
                     <div className = {styles.buttonsConteiner}>

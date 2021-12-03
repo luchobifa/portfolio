@@ -28,6 +28,17 @@
     border-radius: 70px;
 }
 
+.titleIcon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.emoji{
+    font-size: 2.0rem;
+}
+
 @media (max-width: 790px){
     .photoandtitle{
         display: flex;
