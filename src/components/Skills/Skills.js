@@ -10,17 +10,23 @@ export default function Skills(){
         <div className = {styles.conteiner}>
             <h1>Skills</h1>
             <div className = {styles.conteinerIcons}>
-                <DiHtml5 className = {styles.icon}/>
-                <DiCss3 className = {styles.icon}/>
-                <DiJsBadge className = {styles.icon}/>
-                <DiNodejs className = {styles.icon}/>
-                <DiGit className = {styles.icon}/>
-                <DiPostgresql className = {styles.icon}/>
-                <DiReact className = {styles.icon}/>
-                <SiTypescript className = {styles.icon}/>
-                <SiRedux className = {styles.icon}/>
-                <SiSequelize className = {styles.icon}/>
-                <DiGithubBadge className = {styles.icon}/>
+                <div className = {styles.iconRows}>
+                    <DiHtml5 className = {styles.icon}/>
+                    <DiCss3 className = {styles.icon}/>
+                    <DiJsBadge className = {styles.icon}/>
+                    <DiNodejs className = {styles.icon}/>
+                </div>
+                <div className = {styles.iconRows}>
+                    <DiGit className = {styles.icon}/>
+                    <DiPostgresql className = {styles.icon}/>
+                    <DiReact className = {styles.icon}/>
+                    <SiTypescript className = {styles.icon}/>
+                </div>
+                <div className = {styles.iconRows}>
+                    <SiRedux className = {styles.icon}/>
+                    <SiSequelize className = {styles.icon}/>
+                    <DiGithubBadge className = {styles.icon}/>
+                </div>
             </div>
         </div>
     );

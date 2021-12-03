@@ -1,6 +1,6 @@
 .conteiner{
     width: 80%;
-    height: 20%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,12 +19,31 @@
 }
 
 .conteinerIcons{
-    width: 80%;
-    display: grid;
+    width: 90%;
+    gap: 70px;
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    place-items: center;
-    grid-template-rows: 120px 120px 120px;
-    grid-template-columns: 120px 120px 120px 120px;
 }
+
+.iconRows{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    .iconRows{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+}
+
