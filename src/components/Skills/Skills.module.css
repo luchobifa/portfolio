@@ -20,6 +20,7 @@
 
 .conteinerIcons{
     width: 90%;
+    height: 100%;
     gap: 70px;
     display: flex;
     flex-direction: column;
@@ -30,6 +31,7 @@
 
 .iconRows{
     width: 80%;
+    height: 12%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;

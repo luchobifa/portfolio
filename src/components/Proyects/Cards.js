@@ -1,21 +1,12 @@
 import React from "react";
-import styles from "./Cards.module.css"
-import calculatorImg from "../../assets/images/calculator.svg"
-import piImg from '../../assets/images/pi.svg';
-import pgImg from '../../assets/images/pg.svg';
+import styles from "./Cards.module.css";
+import { allProjects } from "./data";
+import Card from "./Card";
 
 export default function Cards(){
     return(
         <div className = {styles.conteiner}>
-            <div className = {styles.cardConteiner}>
-                <img alt = "foto" src = {calculatorImg} className = {styles.img}></img>
-            </div>
-            <div className = {styles.cardConteiner}>
-                <img  alt = "foto" src = {piImg} className = {styles.img}></img>
-            </div>
-            <div className = {styles.cardConteiner}>
-                <img  alt = "foto" src = {pgImg} className = {styles.img}></img>
-            </div>
+            {allProjects.map(p => <Card img = {p.img} id = {p.id} link = {p.link}/>)}
         </div>
     );
 }
