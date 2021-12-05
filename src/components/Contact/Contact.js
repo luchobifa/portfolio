@@ -64,18 +64,18 @@ export default function Contact(){
                 <h1>Contact Me</h1>
                 <FormControl style = {{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
                     {/* <InputLabel>Name</InputLabel> */}
-                    <TextField required className = {styles.inputArea} label = "Name" name = "name" onChange = {handleChange} value = {form.name} helperText={'Your full name'}></TextField>
+                    <TextField required className = {styles.input} label = "Name" name = "name" onChange = {handleChange} value = {form.name} helperText={'Your full name'}></TextField>
                 </FormControl>
 
                 <FormControl style = {{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
-                    <TextField id ="email-helper" required className = {styles.inputArea} label = "Email" name = "email" onChange = {handleChange} value = {form.email} helperText={'Your personal email'}></TextField>
+                    <TextField id ="email-helper" required className = {styles.input} label = "Email" name = "email" onChange = {handleChange} value = {form.email} helperText={'Your personal email'}></TextField>
                 </FormControl>
 
                 <FormControl style = {{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
-                    <TextField required className = {styles.inputArea} label = "Message" name = "message" variant = "outlined" multiline = {true}  onChange = {handleChange} value = {form.message} helperText={'Your message'}></TextField>
+                    <TextField required className = {styles.inputArea} label = "Message" name = "message" variant = "outlined" multiline = {true}  onChange = {handleChange} value = {form.message} helperText={'Your message'}rows = {10}></TextField>
                 </FormControl>
                 
-                <Button variant="contained" type= "submit" onClick = {handleSubmit}>Submit</Button>
+                <Button variant="contained" type= "submit" onClick = {handleSubmit} style={{width: "38%", height: "5%"}}>Submit</Button>
             </Container>
         </div>
     )

@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import AboutMe from '../AboutMe/AboutMe.js';
 import Proyects from '../Proyects/Proyects.js';
 import Contact from "../Contact/Contact.js";
+import Footer from "../Footer/Footer.js";
 
 export default function Home(){
     return(
@@ -26,6 +27,7 @@ export default function Home(){
             <AboutMe/>
             <Proyects/>
             <Contact/>
+            <Footer/>
         </div>
     );
 };

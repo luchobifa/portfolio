@@ -1,6 +1,6 @@
 .container{
     width: 100%;
-    height: 90vh;
+    height: 110vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +16,10 @@
     gap: 50px;
 }
 
+.input{
+    width: 150%;
+}
+
 .inputArea{
-    width: 200%;
+    width: 165%;
 }
