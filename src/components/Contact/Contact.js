@@ -75,7 +75,7 @@ export default function Contact(){
                     <TextField required className = {styles.inputArea} label = "Message" name = "message" variant = "outlined" multiline = {true}  onChange = {handleChange} value = {form.message} helperText={'Your message'}rows = {10}></TextField>
                 </FormControl>
                 
-                <Button variant="contained" type= "submit" onClick = {handleSubmit} style={{width: "38%", height: "5%"}}>Submit</Button>
+                <Button variant="contained" type= "submit" onClick = {handleSubmit} style={{width: "38%", height: "5%"}}>Submit </Button> 
             </Container>
         </div>
     )
