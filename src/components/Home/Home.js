@@ -16,7 +16,7 @@ export default function Home(){
                 <div>
                     <h1 className = {styles.firstTitle}>Hi there,</h1>
                     <h1>I'm Lucho Bifaretti</h1>
-                    <h1> a Full Stack Web Developer</h1>
+                    <h1>Full Stack Web Developer</h1>
                     <div className = {styles.buttonsConteiner}>
                         <Button variant="contained" style = {{marginTop : "25px"}}>Contact Me</Button>
                         <Button variant="contained" style = {{marginTop : "25px"}}>Portfolio</Button>

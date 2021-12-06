@@ -5,13 +5,14 @@ import axios from "axios";
 import Swal from 'sweetalert2';
 
 export default function Contact(){
-    const [name, setName] = useState('');
-    const [message, setMessage] = useState("");
-    const [email, setEmail] = useState("");
+    // const [name, setName] = useState('');
+    // const [message, setMessage] = useState("");
+    // const [email, setEmail] = useState("");
     const [form, setForm] = useState({
-        name, 
-        email, 
-        message
+        name: "", 
+        email: "", 
+        subject: "", 
+        message: ""
     })
 
     function handleChange(e){
@@ -24,14 +25,14 @@ export default function Contact(){
     //console.log(form)
 
     function handleSubmit(){
-        if(form.name === "" || form.email === "" || form.message === ""){
-            Swal.fire({
-                title: 'Error',
-                text: 'You must fill all fields',
-                icon: 'error',
-                confirmButtonText: 'Try again',
-              });
-        }else{
+        // if(form.name === "" || form.email === "" || form.message === "" || form.subject === ""){
+        //     Swal.fire({
+        //         title: 'Error',
+        //         text: 'You must fill all fields',
+        //         icon: 'error',
+        //         confirmButtonText: 'Try again',
+        //       });
+        // }else{
             sendEmail();
             Swal.fire({
                 title: 'Success',
@@ -42,9 +43,10 @@ export default function Contact(){
             setForm({
                 name: "", 
                 email: "",
+                subject: "",
                 message: ""
             })
-        }
+        
     }
 
     function sendEmail(){
@@ -52,6 +54,7 @@ export default function Contact(){
         axios.post('https://formsubmit.co/ajax/lucianobifa@gmail.com', {
             name: form.name,
             email: form.email,
+            subject: form.subject,
             message: form.message
         })
         .then(response => console.log(response))
@@ -60,7 +63,7 @@ export default function Contact(){
 
     return(
         <div className = {styles.container} id = 'contact'>
-            <Container style = {{display: "flex", flexDirection: "column", gap: "50px", width: "50%", height: "80%",  alignItems: "center"}}>
+            <form style = {{display: "flex", flexDirection: "column", gap: "25px", width: "50%", height: "80%",  alignItems: "center"}} onSubmit = {handleSubmit}>
                 <h1>Contact Me</h1>
                 <FormControl style = {{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
                     {/* <InputLabel>Name</InputLabel> */}
@@ -72,11 +75,15 @@ export default function Contact(){
                 </FormControl>
 
                 <FormControl style = {{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
+                    <TextField  required className = {styles.input} label = "Subject" name = "subject" onChange = {handleChange} value = {form.subject} helperText={'Subject'}></TextField>
+                </FormControl>
+
+                <FormControl style = {{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
                     <TextField required className = {styles.inputArea} label = "Message" name = "message" variant = "outlined" multiline = {true}  onChange = {handleChange} value = {form.message} helperText={'Your message'}rows = {10}></TextField>
                 </FormControl>
                 
-                <Button variant="contained" type= "submit" onClick = {handleSubmit} style={{width: "38%", height: "5%"}}>Submit </Button> 
-            </Container>
+                <Button variant="contained" type= "submit" style={{width: "36%", height: "5%"}}>Submit </Button> 
+            </form>
         </div>
     )
 }

@@ -14,8 +14,17 @@
 }
 
 .icon:hover{
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
+}
+
+.iconDiv{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .conteinerIcons{
@@ -30,8 +39,8 @@
 }
 
 .iconRows{
-    width: 80%;
-    height: 12%;
+    width: 82%;
+    height: 17%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
