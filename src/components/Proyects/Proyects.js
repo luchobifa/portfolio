@@ -6,7 +6,7 @@ export default function Proyects(){
     return(
         <div className = {styles.conteiner} id = "proyects">
             <div className = {styles.titleEmoji}>
-                <h1>My Portfolio</h1>
+                <h1>My Proyects</h1>
                 <span className = {styles.emoji}>📁</span>
             </div>
             <Cards/>

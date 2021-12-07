@@ -1,4 +1,4 @@
-import calculatorImg from '../../assets/images/calculator.jpeg';
+import calculatorImg from '../../assets/images/calculator.png';
 import piImg from "../../assets/images/pi.svg";
 import pgImg from "../../assets/images/pg.svg";
 

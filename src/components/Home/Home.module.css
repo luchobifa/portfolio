@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@300&family=Orbitron&display=swap');
+
 .foto{
     width: 400px;
     height: 400px;
@@ -17,9 +19,52 @@
     background-color: RGB(248, 247 , 253);
 }
 
+/* .titleContainer{
+    display: flex;
+    align-items: center;
+    height: 95vh;
+} */
+
+.allTitlesContainer{
+    width: 24%;
+}
+
 .firstTitle{
     font-size: 2.0em;
+    font-family: 'Genos', sans-serif;
+    
 }
+
+.nameTitle{
+    font-size: 4.0em;
+    font-family: 'Genos', sans-serif;
+}
+
+/* --------------dynamic title ---------------------*/
+
+.dynamicTitle{
+    font-family: 'Genos', sans-serif;
+    border-right: 3px solid black;
+    animation: typist 10s steps(21) infinite, caret 0.7s infinite step-end;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 3.0em;
+    width: 40%;
+}
+
+@keyframes caret{
+    0%, 100%{border-color: transparent;}
+    50%{border-color: black;}
+}
+@keyframes typist{
+    0%{width: 0ch;}
+    30%{width: 21ch;}
+    80%{width: 21ch;}
+    90%{width: 0ch;}
+    100%{width: 0ch;}
+}
+
+/*--------------------------------------------------*/
 
 .buttonsConteiner{
     display: flex;

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Skills.module.css"
 import {DiJsBadge, DiHtml5, DiGit, DiCss3, DiNodejs, DiPostgresql, DiReact, DiGithubBadge} from "react-icons/di";
-import {SiTypescript, SiRedux, SiSequelize} from "react-icons/si";
+import {SiTypescript, SiRedux, SiSequelize, SiExpress} from "react-icons/si";
 
 export default function Skills(){
     let icons = [DiJsBadge];
@@ -26,6 +26,7 @@ export default function Skills(){
                     <div  className = {styles.iconDiv}><SiRedux className = {styles.icon}/>Redux</div>
                     <div  className = {styles.iconDiv}><SiSequelize className = {styles.icon}/>Sequelize</div>
                     <div  className = {styles.iconDiv}><DiGithubBadge className = {styles.icon}/>Github</div>
+                    <div  className = {styles.iconDiv}><SiExpress className = {styles.icon}/>Express    </div>
                 </div>
             </div>
         </div>
