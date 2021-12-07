@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 .conteiner{
     width: 80%;
     height: 100%;
@@ -5,6 +7,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.title{
+    font-family: 'Poppins', sans-serif;
 }
 
 .icon{
@@ -21,6 +27,7 @@
 .iconDiv{
     width: 100px;
     height: 100px;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;

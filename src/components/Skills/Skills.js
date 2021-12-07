@@ -8,7 +8,7 @@ export default function Skills(){
     console.log(icons);
     return(
         <div className = {styles.conteiner}>
-            <h1>Skills</h1>
+            <h1 className = {styles.title}>Skills</h1>
             <div className = {styles.conteinerIcons}>
                 <div className = {styles.iconRows}>
                     <div className = {styles.iconDiv}><DiHtml5 className = {styles.icon}/>HTML</div>

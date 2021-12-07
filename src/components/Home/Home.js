@@ -1,14 +1,12 @@
 import React from "react";
 import NavBar from '../NavBar/NavBar.js';
-import foto from '../../assets/images/fotocarnet.png';
+import foto from '../../assets/images/fotocarnetsinfondo.png';
 import styles from './Home.module.css';
-import Button from '@mui/material/Button';
 import AboutMe from '../AboutMe/AboutMe.js';
 import Proyects from '../Proyects/Proyects.js';
 import Contact from "../Contact/Contact.js";
 import Footer from "../Footer/Footer.js";
 import { NavHashLink as Link } from "react-router-hash-link";
-import {MdWavingHand} from "react-icons/md"
 
 export default function Home(){
     return(
@@ -28,7 +26,7 @@ export default function Home(){
                     
                     <div className = {styles.buttonsConteiner}>
                         <Link to = '/#contact' smooth = {true} offset = {-70} duration = {1000} activeClassName ="links-active" style = {{textDecoration: "none"}}>
-                            <Button variant="contained" style = {{marginTop : "25px"}}>Hire Me</Button>
+                            <button className = {styles.button}>Contact Me</button>
                         </Link>
                     </div>
                     

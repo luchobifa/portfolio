@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Genos:wght@300&family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
 
 .foto{
     width: 400px;
@@ -26,7 +31,8 @@
 } */
 
 .allTitlesContainer{
-    width: 24%;
+    width: 28%;
+    height: 33%;
 }
 
 .firstTitle{
@@ -36,19 +42,20 @@
 }
 
 .nameTitle{
-    font-size: 4.0em;
-    font-family: 'Genos', sans-serif;
+    font-size: 3.5em;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* --------------dynamic title ---------------------*/
 
 .dynamicTitle{
-    font-family: 'Genos', sans-serif;
+    font-family: 'Poppins', sans-serif;
     border-right: 3px solid black;
     animation: typist 10s steps(21) infinite, caret 0.7s infinite step-end;
     white-space: nowrap;
     overflow: hidden;
-    font-size: 3.0em;
+    font-size: 2.0em;
+    font-weight: 600;
     width: 40%;
 }
 
@@ -66,10 +73,24 @@
 
 /*--------------------------------------------------*/
 
+.button{
+    width: 130%;
+    height: 42px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: rgba(3, 3, 3, 0.705);
+    background-color: RGB(248, 247 , 253);
+    cursor: pointer;
+    border: 2px solid lightblue;
+}
+
 .buttonsConteiner{
+    width: 80%;
+    height: 20%;
     display: flex;
     align-items: center;
-    gap: 30px;
 }
 
 @media (max-width: 790px) {
@@ -86,5 +107,8 @@
         align-items: center;
         flex-direction: column-reverse;
         gap: 50px;
+    }
+    .allTitlesContainer{
+        width: 85%;
     }
 }
