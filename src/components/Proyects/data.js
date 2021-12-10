@@ -1,6 +1,6 @@
-import calculatorImg from '../../assets/images/calculator.png';
-import piImg from "../../assets/images/pi.svg";
-import pgImg from "../../assets/images/pg.svg";
+import calculatorImg from '../../assets/images/calculator.jpeg';
+import piImg from "../../assets/images/pi.png";
+import pgImg from "../../assets/images/pg.png";
 
 export let allProjects = [
     {
