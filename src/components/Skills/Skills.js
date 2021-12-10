@@ -7,7 +7,8 @@ export default function Skills(){
     let icons = [DiJsBadge];
     console.log(icons);
     return(
-        <div className = {styles.conteiner}>
+        <div  className = {styles.container}>
+        <div className = {styles.conteinerSkills}>
             <h1 className = {styles.title}>Skills</h1>
             <div className = {styles.conteinerIcons}>
                 <div className = {styles.iconRows}>
@@ -29,6 +30,7 @@ export default function Skills(){
                     <div  className = {styles.iconDiv}><SiExpress className = {styles.icon}/>Express    </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 }

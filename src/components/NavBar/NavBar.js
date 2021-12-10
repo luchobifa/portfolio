@@ -16,6 +16,7 @@ export default function NavBar(){
 
     return(
         <div className ={styles.conteiner}>
+            <div className ={styles.conteinerInside}>
             
             {/* <Link to = '/#' smooth = {true} offset = {-70} duration = {1000} activeClassName = "selected" style = {{textDecoration: "none", color: 'black'}}><h3>Portfolio.</h3></Link> */}
             
@@ -35,6 +36,7 @@ export default function NavBar(){
                 <i class="fas fa-bars"></i>
             </button>
             {/* <div className = {styles.lightMode}>{UseSwitchesCustom()}</div> */}
+            </div>
         </div>
     );
 } 

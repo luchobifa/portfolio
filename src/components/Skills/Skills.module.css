@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-.conteiner{
+.container{
     width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.conteinerSkills{
+    width: 90%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -37,16 +45,17 @@
 .conteinerIcons{
     width: 90%;
     height: 100%;
-    gap: 70px;
+    gap: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 15%;
 }
 
 .iconRows{
-    width: 82%;
+    width: 90%;
     height: 17%;
     display: flex;
     justify-content: space-between;
@@ -55,12 +64,24 @@
 }
 
 @media (max-width: 768px){
+
+    .conteinerIcons{
+        width: 98%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+        align-items: center;
+    }
+
     .iconRows{
-        width: 80%;
+        width: 95%;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
+        flex-wrap: wrap;
     }
     
 }

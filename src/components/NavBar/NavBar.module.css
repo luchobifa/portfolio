@@ -7,9 +7,17 @@
     background-color: rgba(255, 255, 255, 0.657);
     box-shadow: 0px 15px 10px -15px rgba(17, 17, 17, 0.308); 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     z-index: 1;
+}
+
+.conteinerInside{
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .linksConteiner{
@@ -62,7 +70,15 @@
         background-color: white;
         box-shadow: 0px 15px 10px -15px rgba(17, 17, 17, 0.308); 
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteinerInside{
+        width: 80%;
+        height: 6vh;
+        display: flex;
+        justify-content: flex-end;
         align-items: center;
     }
     
