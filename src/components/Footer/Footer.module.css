@@ -6,19 +6,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4%;
+    margin-top: 10%;
 }
 
-.iconsContainer{
-    /* background-color: red; */
-    height: 40%;
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.icons{
-    width:300%;
-    height: 50%;
-}

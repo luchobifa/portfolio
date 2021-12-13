@@ -55,7 +55,7 @@ body{
     animation: typist 10s steps(21) infinite, caret 0.7s infinite step-end;
     white-space: nowrap;
     overflow: hidden;
-    font-size: clamp(26px, 3vw, 2.0em);
+    font-size: clamp(24px, 3vw, 2.0em);
     font-weight: 600;
     width: 40%;
 }
